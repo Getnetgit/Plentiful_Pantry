@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Grocery extends Model {}
 
-Project.init(
+Grocery.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,10 +11,12 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
+
     grocery_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     category: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -24,7 +26,8 @@ Project.init(
       defaultValue:1,
       allowNull: false,
     },
-    avilableQauntity: {
+
+    avilable_Qauntity: {
       type: DataTypes.INET,
       defaultValue:0,
       allowNull: false,
@@ -53,4 +56,4 @@ Project.init(
   }
 );
 
-module.exports = Project;
+module.exports = Grocery;
