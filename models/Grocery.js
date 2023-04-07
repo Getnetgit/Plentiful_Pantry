@@ -11,10 +11,12 @@ Grocery.init(
       primaryKey: true,
       autoIncrement: true,
     },
+
     grocery_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+
     category: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -24,7 +26,8 @@ Grocery.init(
       defaultValue:1,
       allowNull: false,
     },
-    avilableQauntity: {
+
+    avilable_Qauntity: {
       type: DataTypes.INET,
       defaultValue:0,
       allowNull: false,

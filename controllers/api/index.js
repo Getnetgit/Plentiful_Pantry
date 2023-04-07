@@ -6,3 +6,4 @@ router.use('/users', userRoutes);
 router.use('/groceries', groceryRoutes);
 
 module.exports = router;
+
