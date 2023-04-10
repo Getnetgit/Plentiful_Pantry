@@ -1,0 +1,124 @@
+<div class="row">
+  <div class="col-auto">
+
+  </div>
+</div>
+
+<div class="row mt-4">
+  <div class="col-auto">
+    <h3>Add new grocery:</h3>
+
+    <form class="form flex-row new-grocery-form">
+      <div class=" form-group">
+        <label for="grocery-name">grocery name:</label>
+        <input class="form-input" type="text" id="grocery-name"
+          name="grocery-name" />
+      </div>
+
+      <div class=" form-group">
+        <label for="grocery-category">Category</label>
+        <select class="form-input" id="grocery-category"
+          name="grocery-category">
+          <option value="">Select a category</option>
+          <option value="fruits">Fruits</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="dairy">Dairy</option>
+          <option value="meat">Meat</option>
+          <option value="bread">Bread</option>
+        </select>
+      </div>
+
+      <div class=" form-group">
+        <button type="submit" class="btn btn-primary">Create</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-12 col-md-6 pantry-list">
+    <h3>Pantry List</h3>
+
+    {{#if groceries.length}}
+
+    {{#each groceries as |grocery|}}
+
+    {{#if grocery.isPantryList}}
+    <div class="row mb-2">
+      <div class=" col-3">
+        <h6><a href="/grocery/{{grocery.id}}">{{grocery.grocery_name}}</a></h6>
+      </div>
+      <div class=" col-2">
+        <h6>{{grocery.category}}</h6>
+      </div>
+      {{!-- <div class=" col-2">
+        <h6>{{format_date grocery.date_updated}}</h6>
+      </div> --}}
+      <div class=" col-1">
+        <input type="number" id={{concat "minQuantity-" grocery.id}}
+          style="max-width:40px"; value={{grocery.quantity_min}} />
+      </div>
+
+      <div class=" col-1">
+
+        <input type="number" id={{concat "quantity-" grocery.id}}
+          style="max-width:40px"; value={{grocery.quantity_avilable}} />
+      </div>
+
+      <div class=" col-2">
+        <button class="btn btn-sm btn-info" data-idUpdate="{{grocery.id}}">update</button>
+      </div>
+      <div class=" col-2">
+        <button class="btn btn-sm btn-danger" data-id="{{grocery.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/if}}
+    {{/each}}
+
+    {{/if}}
+
+  </div>
+
+  <div class="col-12 col-md-6 shoping-list">
+    <h3>Shoping List </h3>
+    {{#if groceries.length }}
+    
+    {{#each groceries as |grocery|}}
+    {{#if grocery.isShopingList}}
+    <div class="row mb-2">
+      <div class=" col-3">
+        <h6><a href="/grocery/{{grocery.id}}">{{grocery.grocery_name}}</a></h6>
+      </div>
+      <div class=" col-2">
+        <h6>{{grocery.category}}</h6>
+      </div>
+      {{!-- <div class=" col-2">
+        <h6>{{format_date grocery.date_updated}}</h6>
+      </div> --}}
+      <div class=" col-1">
+        <input type="number" id={{concat "minQuantity-" grocery.id}}
+          style="max-width:40px"; value={{grocery.quantity_min}} />
+      </div>
+
+      <div class=" col-1">
+
+        <input type="number" id={{concat "quantity-" grocery.id}}
+          style="max-width:40px"; value={{grocery.quantity_avilable}} />
+      </div>
+
+      <div class=" col-2">
+        <button class="btn btn-sm btn-info" data-idUpdate="{{grocery.id}}">update</button>
+      </div>
+      <div class=" col-2">
+        <button class="btn btn-sm btn-danger" data-id="{{grocery.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/if}}
+    {{/each}}
+    
+    {{/if}}
+  </div>
+
+</div>
+
+<script src="/js/Grocery.js"></script>

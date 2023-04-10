@@ -21,15 +21,15 @@ Grocery.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    Qauntity_min: {
-      type: DataTypes.INET,
-      defaultValue:1,
+    quantity_min: {
+      type: DataTypes.INTEGER,
+      defaultValue: 1,
       allowNull: false,
     },
 
-    avilable_Qauntity: {
-      type: DataTypes.INET,
-      defaultValue:0,
+    quantity_avilable: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
       allowNull: false,
     },
   
@@ -37,6 +37,18 @@ Grocery.init(
       type: DataTypes.DATE,
       allowNull: false,
       defaultValue: DataTypes.NOW,
+    },
+    isShopingList:{
+      type: DataTypes.VIRTUAL,
+      get() {
+        return this.quantity_avilable < this.quantity_min;
+      }
+    },
+    isPantryList:{
+      type: DataTypes.VIRTUAL,
+      get() {
+        return this.quantity_avilable >= this.quantity_min;
+      }
     },
    
     user_id: {
