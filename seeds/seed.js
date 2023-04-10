@@ -15,7 +15,7 @@ const seedDatabase = async () => {
 
   for (const grocery of groceryData) {
     await Grocery.create({
-      ...Grocery,
+      ...grocery,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
