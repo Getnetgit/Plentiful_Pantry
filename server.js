@@ -38,6 +38,11 @@ app.set('view engine', 'handlebars');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+// The root is set to profile page
+// If not login, it will reroute to login page instead
+app.get('/', async (req, res) => {
+  res.redirect('./api/users/profile');
+});
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {

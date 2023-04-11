@@ -1,15 +1,35 @@
 [
   {
-    "grocery_name": "tometo",
-    "category": "vagi"
+    "grocery_name": "Potato",
+    "category": "Vegetables"
   },
   {
-    "grocery_name": "fish",
-    "category": "protin"
+    "grocery_name": "Orange",
+    "category": "Fruits"
   },
   {
-    "grocery_name": "egg",
-    "category": "protin"
+    "grocery_name": "Egg",
+    "category": "Meat"
+  },
+  {
+    "grocery_name": "Apple",
+    "category": "Fruits"
+  },
+  {
+    "grocery_name": "Milk",
+    "category": "Dairy"
+  },
+  {
+    "grocery_name": "Yogurt",
+    "category": "Dairy"
+  },
+  {
+    "grocery_name": "Cake",
+    "category": "Bread"
+  },
+  {
+    "grocery_name": "Baguette",
+    "category": "Bread"
   }
 ]
 
