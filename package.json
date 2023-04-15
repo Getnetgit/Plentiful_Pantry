@@ -22,6 +22,9 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
+  "engines": {
+  "node": "18.x"
+},
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
