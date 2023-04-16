@@ -12,12 +12,12 @@ This application will make your life easier by doing 3 things:
 ## [Table of Content](#table-of-content)
 * [Description](#description)
 * [Installation](#installation)
-* [Usage](#useage)
+* [Usage](#usage)
 * [Authors](#authors)
 * [Packages](#packages)
 
 ## [Installation](#table-of-content)
-Deployed on Heroku : 
+Deployed on Heroku: [Click here!]()
 
 
 ## [Usage](#table-of-content)
@@ -30,9 +30,9 @@ Inside shopping list, two default values (minimum quantity and quantity avaliabl
 * Minimum quantity is how much you want from the store.
 * Quantity avaliable is how much you have in the pantry.
 
-For example, you have one loaf of bread in a pantry but not planning to buy more. You can set minimum quantity to 0 and quantity_avaliable to 1, since you are not buying more. Bread will be on the pantry list.
+For example, you have one loaf of bread in a pantry but not planning to buy more. You can set minimum quantity to 0 and quantity avaliable to 1, since you are not buying more. Bread will be on the pantry list.
 
-However, if you have 2 orange left and you want to buy 5 more, you can set minimum quantity to 5 and quantity_avaliable to 2. Orange will be on the shopping list. 
+However, if you have 2 orange left and you want to buy 5 more, you can set minimum quantity to 5 and quantity avaliable to 2. Orange will be on the shopping list. 
 
 
 ## [Authors](#table-of-content)
