@@ -7,6 +7,7 @@
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
       <link rel="stylesheet" href="/CSS/style.css">
+      <link rel="stylesheet" href="/CSS/animate.css">
   </head>
   <body>
       <header class="minWidth" >
@@ -30,8 +31,9 @@
                       <h4 class=" is-size-4 has-text-weight-bold is-capitalized">Hello {{name}} !</h4>
                     </a>
                     <span class="navbar-item">
-                      <a class="button is-black is-rounded" id="logout">
-                        <span class="icon">
+
+                      <a class="button is-black is-rounded" id="logou
+                      <span class="icon">
                           <i class="fab fa-github" ></i>
                         </span>
                         <span>Logout</span>
@@ -58,9 +60,16 @@
           </div>
         </section>
       </header>
-      <main class="has-background-primary-light pt-6 pl-1 vh-100 minWidth">
+      
+      <main class="has-background-primary-light pt-6 pl-1 minWidth"  style="height: calc(100vh - 72px); background-image: url('/Images/Background\ Image.png' );" >
+      {{!-- <div class="canvas-container">
+  <canvas id="canvas2"></canvas>
+  <div class="html-overlay"> --}}
+
         <!-- Render the sub layout -->
         {{{ body }}}
+    {{!-- </div>
+    </div> --}}
       </main>
       <footer>
       </footer>
@@ -68,6 +77,7 @@
     {{#if logged_in}}
     <script src="/js/logout.js"></script>
     {{/if}}
+  {{!-- <script src="/js/Animation.js"></script> --}}
   </body>
 </html>
 
