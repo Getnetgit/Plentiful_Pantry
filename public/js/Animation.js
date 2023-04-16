@@ -36,7 +36,7 @@ let playerState = 'fly'
      yPosition:100
     },
     {name:"fly",
-    frames:7,  
+    frames:9,  
     xPosition:100,
     yPosition:100
 },
