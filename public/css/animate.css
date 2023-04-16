@@ -1,0 +1,23 @@
+body{
+    background-color: #CCEDE7;
+}
+#canvas2 {
+width: 100vw;
+height: 100vh;
+}
+.canvas-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.html-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+  }
+  
