@@ -12,6 +12,10 @@ body{
     background-color:#CCEDE7;
 
 }
-
+main{
+  background-image: url(../Images/BACKGROUNG\ Image.png);
+  width: 100vw;
+  height:calc(100vh - 72px);
+}
     
 
