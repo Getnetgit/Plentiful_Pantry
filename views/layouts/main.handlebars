@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantiful Pantry</title>
+    <title>Plentiful Pantry</title>
     <link rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
       <link rel="stylesheet" href="/CSS/style.css">
   </head>
   <body>
       <header class="minWidth" >
-        <section class="hero is-large is-info">
+        <section class="hero is-large has-background-primary-light">
           <div class="hero-head">
             <nav class="navbar">
               <div class="container">
-                <div class="navbar-brand is-size-2">
-                  Plantiful Pantry
+                <div class="navbar-brand is-size-1 has-text-black has-text-weight-bold">
+                  Plentiful Pantry
                   {{!-- <span class="navbar-burger" data-target="navbarMenuHeroB">
                     <span></span>
                     <span></span>
@@ -27,10 +27,10 @@
                   <div class="navbar-end">
                     <a class="navbar-item ">
                       
-                      <h4>Hi {{name}} !</h4>|
+                      <h4 class=" is-size-4 has-text-weight-bold is-capitalized">Hello {{name}} !</h4>
                     </a>
                     <span class="navbar-item">
-                      <a class="button is-info is-inverted " id="logout">
+                      <a class="button is-black is-rounded" id="logout">
                         <span class="icon">
                           <i class="fab fa-github" ></i>
                         </span>
@@ -43,10 +43,10 @@
                   <div class="navbar-end">
                     <span class="navbar-item ">
                       
-                      <h4 >Login or</h4>  |
+                      <h4 ></h4>  
                     </span>
                     <span class="navbar-item">
-                      <h4>SignUp</h4>
+                      <h4></h4>
                     </span>
                     
                   </div>
@@ -58,7 +58,7 @@
           </div>
         </section>
       </header>
-      <main class="has-background-grey-lighter pt-6 pl-1 vh-100 minWidth">
+      <main class="has-background-primary-light pt-6 pl-1 vh-100 minWidth">
         <!-- Render the sub layout -->
         {{{ body }}}
       </main>

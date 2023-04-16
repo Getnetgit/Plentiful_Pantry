@@ -27,14 +27,14 @@
     {{!-- </div> --}}
 </div>
 <div class="columns ">
-  <div class="column is-6 ml-1 box  minWidth maxWidth pantry-list">
+  <div class="column is-6 ml-1 has-background-primary-light box  minWidth maxWidth pantry-list">
     <h3 class="is-size-1 has-text-centered bp-3">Pantry List</h3>
     <table class="table px-2 is-striped">
       <thead>
-        <tr>
+        <tr class="has-background-primary-light">
           <th>Name</th>
           <th>Category</th>
-          <th>Qty-min</th>
+          <th>Qty-Min</th>
           <th>Qty-Avilabe</th>
           <th> </th>
           <th> </th>
@@ -44,16 +44,16 @@
         {{#if groceries.length}}
         {{#each groceries as |grocery|}}
         {{#if grocery.isPantryList}}
-        <tr>
+        <tr class="has-background-primary-light">
           <th><a href="/grocery/{{grocery.id}}">{{grocery.grocery_name}}</a></th>
           <td>{{grocery.category}}</td>
           <td><input type="number" id={{concat "minQuantity-" grocery.id}}
           style="max-width:40px"; value={{grocery.quantity_min}} /></td>
           <td> <input type="number" id={{concat "quantity-" grocery.id}}
               style="max-width:40px"; value={{grocery.quantity_avilable}} /></td>
-          <td><button class="button is-small is-success"
-              data-idUpdate="{{grocery.id}}">update</button></td>
-          <td> <button class="button is-small is-danger" data-id="{{grocery.id}}">DELETE</button></td>
+          <td><button class="button is-small is-black is-rounded"
+              data-idUpdate="{{grocery.id}}">Update</button></td>
+          <td> <button class="button is-small is-black is-rounded" data-id="{{grocery.id}}">DELETE</button></td>
         </tr>
         {{/if}}
         {{/each}}
@@ -61,14 +61,14 @@
       </tbody>
     </table>
   </div>
-  <div class="column minWidth maxWidth ml-1 is-6 box  shoping-list">
-    <h3 class="is-size-1 has-text-centered bp-3">Shoping List </h3>
+  <div class="column minWidth maxWidth ml-1 is-6 has-background-primary-light box  shoping-list">
+    <h3 class="is-size-1 has-text-centered bp-3">Shopping List </h3>
     <table class="table px-2 is-striped">
       <thead>
-        <tr>
+        <tr class="has-background-primary-light">
           <th>Name</th>
           <th>Category</th>
-          <th>Qty-min</th>
+          <th>Qty-Min</th>
           <th>Qty-Avilabe</th>
           <th> </th>
           <th> </th>
@@ -79,16 +79,16 @@
     {{#each groceries as |grocery|}}
     {{#if grocery.isShopingList}}
     
-        <tr>
+        <tr class="has-background-primary-light">
           <th><a href="/grocery/{{grocery.id}}">{{grocery.grocery_name}}</a></th>
           <td>{{grocery.category}}</td>
           <td><input type="number" id={{concat "minQuantity-" grocery.id}}
           style="max-width:40px"; value={{grocery.quantity_min}} /></td>
           <td> <input type="number" id={{concat "quantity-" grocery.id}}
               style="max-width:40px"; value={{grocery.quantity_avilable}} /></td>
-          <td><button class="button is-small is-success"
-              data-idUpdate="{{grocery.id}}">update</button></td>
-          <td> <button class="button is-small is-danger" data-id="{{grocery.id}}">DELETE</button></td>
+          <td><button class="button is-small is-black is-rounded"
+              data-idUpdate="{{grocery.id}}">Update</button></td>
+          <td> <button class="button is-small is-black is-rounded" data-id="{{grocery.id}}">DELETE</button></td>
         </tr>
     {{/if}}
     {{/each}}
