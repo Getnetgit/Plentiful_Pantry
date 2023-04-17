@@ -17,11 +17,7 @@
               <div class="container">
                 <div class="navbar-brand is-size-1 has-text-black has-text-weight-bold">
                   Plentiful Pantry
-                  {{!-- <span class="navbar-burger" data-target="navbarMenuHeroB">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </span> --}}
+                 
                 </div>
                 {{!-- <div id="navbarMenuHeroB" class="navbar-menu"> --}}
                   {{#if logged_in}}
@@ -32,7 +28,7 @@
                     </a>
                     <span class="navbar-item">
 
-                      <a class="button is-black is-rounded" id="logou
+                      <a class="button is-black is-rounded" id="logout">
                       <span class="icon">
                           <i class="fab fa-github" ></i>
                         </span>
@@ -53,8 +49,7 @@
                     
                   </div>
                    {{/if}}
-                   {{!--  --}}
-                {{!-- </div> --}}
+               
               </div>
             </nav>
           </div>
@@ -62,9 +57,6 @@
       </header>
       
       <main class="has-background-primary-light pt-6 pl-1 minWidth"  style="height: calc(100vh - 72px); background-image: url('/Images/Background\ Image.png' );" >
-      {{!-- <div class="canvas-container">
-  <canvas id="canvas2"></canvas>
-  <div class="html-overlay"> --}}
 
         <!-- Render the sub layout -->
         {{{ body }}}
