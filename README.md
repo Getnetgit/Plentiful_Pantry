@@ -1,4 +1,5 @@
 # Plentiful_Pantry
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## [Description](#table-of-content)
 Are you tired of ripping notes that ends with papercuts? Are you tired of punching holes to your list when you ticks out your item? Worry not! Plentiful Pantry, the editable shopping list, can ease your inconvience problems! 
@@ -12,12 +13,12 @@ This application will make your life easier by doing 3 things:
 ## [Table of Content](#table-of-content)
 * [Description](#description)
 * [Installation](#installation)
-* [Usage](#useage)
+* [Usage](#usage)
 * [Authors](#authors)
 * [Packages](#packages)
 
 ## [Installation](#table-of-content)
-Deployed on Heroku : 
+Deployed on Heroku : https://plentiful-pantry.herokuapp.com/
 
 
 ## [Usage](#table-of-content)
@@ -32,8 +33,11 @@ Inside shopping list, two default values (minimum quantity and quantity avaliabl
 
 For example, you have one loaf of bread in a pantry but not planning to buy more. You can set minimum quantity to 0 and quantity_avaliable to 1, since you are not buying more. Bread will be on the pantry list.
 
-However, if you have 2 orange left and you want to buy 5 more, you can set minimum quantity to 5 and quantity_avaliable to 2. Orange will be on the shopping list. 
+However, if you have 2 orange left and you want to buy 5 more, you can set minimum quantity to 5 and quantity avaliable to 2. Orange will be on the shopping list. 
 
+![Login Page](./Assets/pictures/Plentiful-Pantry-Login.png)
+
+![Profile Page](./Assets/pictures/Plentiful-Pantry_Profile.png)
 
 ## [Authors](#table-of-content)
 | Front-end contribution  | Back-end contribution |
